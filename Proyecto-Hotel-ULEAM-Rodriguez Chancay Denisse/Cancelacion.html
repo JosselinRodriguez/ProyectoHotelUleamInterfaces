@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cancelar Reserva de Hotel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CancelacionHotel/Cancelacion.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cancelación de Reserva de Hotel</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <center>
+                <h2>Información de la Reserva</h2>
+            </center>
+            <form id="form-cancelar" action="procesar_cancelacion.php" method="POST">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="num-reserva">Número de Reserva:</label>
+                <input type="text" id="num-reserva" name="num-reserva" required>
+                <center>
+                    <button type="submit" id="btn-cancelar">Cancelar Reserva</button>
+                </center>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <center>
+            <p>Todos los derechos reservados © 2023 Hotel UlEAM</p>
+
+        </center>
+    </footer>
+    <script src="CancelacionHotel/Cancelacion.js"></script>
+</body>
+
+</html>

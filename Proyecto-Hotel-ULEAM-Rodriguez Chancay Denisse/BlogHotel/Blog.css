@@ -1,0 +1,136 @@
+/* Estilos generales */
+
+body {
+    margin: 0;
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Encabezado */
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+
+/* Sección de héroe */
+
+.hero {
+    background-image: url(BlogHotel\img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+}
+.hero-content {
+    text-align: center;
+    color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #333;
+}
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Sección de publicaciones del blog */
+.blog-posts {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+article {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+article p {
+    margin-bottom: 20px;
+}
+article img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+article a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+article a:hover {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
